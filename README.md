@@ -5,7 +5,7 @@ Run with Python 3.6+
 
 Example usage:
 
-python3 sudoku.py <difficulty (1-4)>
+python3 sudoku.py <difficulty (1 [Easy]-4 [Hard])>
 python3 sudoku.py
 
 If no difficulty is provided, you will be prompted to select a difficulty before starting the game.
