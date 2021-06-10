@@ -105,8 +105,8 @@ class Board:
 
 def main():
     print(f'  |{"-"*23}|\n  |{"Sudoku":^23s}|\n  |{"Created by TheKDub":^23s}|\n  |{"-"*23}|\n')
-    board = Board(int(sys.argv[1]) if len(sys.argv) > 1 else int(input("Enter a difficulty (1 [Easy] - 4 [Hard]): ")))
-    print(f'  Solved? {board.validate()}\n{board}')
+    board = Board(int(sys.argv[1]) if len(sys.argv) > 1 else int(input("  Enter a difficulty (1 [Easy] - 4 [Hard]): ")))
+    print(f'\n  Solved? {board.validate()}\n{board}')
     while not board.validate():
         try:
             x = int(input("\n  Row: "))
@@ -119,6 +119,7 @@ def main():
         except ValueError:
             print('  Invalid input, try again!')
     print("\n  Congrats! You've solved Sudoku!")
+    input("Press ENTER to exit!")
 
 
 main()
